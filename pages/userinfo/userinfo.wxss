@@ -1,0 +1,115 @@
+/* pages/userinfo/userinfo.wxss */
+.vip {
+  width: 100%;
+  height: 50px;
+  background-color: #e5007f;
+  font-size: 15px;
+  color: #fff;
+  line-height: 50px;
+}
+
+.vip span {
+  margin: 0 10px;
+}
+
+.banner {
+  width: 100%;
+}
+
+.btnbox {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  position: relative;
+}
+
+.btnbox .btnnews {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-8.5px);
+}
+
+.btnbox .circle {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  width: 25px;
+  height: 25px;
+  border: 4px solid #fff;
+  transform: translateY(-17px);
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+.btnbox .circle .van-icon {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-2px);
+}
+
+.van-button {
+  width: 150px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.van-cell {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.van-icon {
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+.icon-box {
+  background-color: #fff;
+}
+
+.icon-box ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon-box ul li {
+  margin: 10px;
+}
+
+.icon-box ul li .van-icon {
+  margin: auto;
+}
+
+.icon-box ul li span {
+  display: block;
+  font-size: 12px;
+  margin-left: -5px;
+}
+
+.listimg image {
+  margin-right: 5px;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+}
+
+.content {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*分割线样式*/
+.divLine {
+  background: #E0E3DA;
+  width: 100%;
+  height: 5rpx;
+}
+
+.arrows image {
+  vertical-align: middle;
+  width: 15px;
+  height: 15px;
+  margin-left: 500rpx;
+}

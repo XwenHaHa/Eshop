@@ -1,0 +1,56 @@
+<!--pages/index/index.wxml-->
+<view>
+  <!-- 搜索栏 -->
+  <van-search value="{{ value }}" shape="round" background="#E5007F" placeholder="请输入搜索关键词" />
+  <!-- 轮播图 -->
+  <swiper class="swiper-container" indicator-dots indicator-color='#eee' indicator-active-color='white' autoplay
+    interval='2000'>
+    <swiper-item wx:for='{{images}}' wx:item='item' wx:key='id'>
+      <image src='{{item.img}}' wx:if='{{images.length>0}}'></image>
+    </swiper-item>
+  </swiper>
+  <!-- 中间栏 -->
+  <view class="icon-box">
+    <ul>
+      <li>
+        <van-icon name="send-gift-o" />
+        <span>零食茶饮</span>
+      </li>
+      <li>
+        <van-icon name="bag-o" />
+        <span>甄选生鲜</span>
+      </li>
+      <li>
+        <van-icon name="point-gift-o" />
+        <span>精选优品</span>
+      </li>
+      <li>
+        <van-icon name="shop-collect-o" />
+        <span>浓情中秋</span>
+      </li>
+    </ul>
+  </view>
+  <!-- 广告 -->
+  <view class="adver">
+    <view class="atop">百姓生活，您的贴身好助理</view>
+    <view class="abottom">
+      <h5>百姓生鲜店</h5>
+      <p>店长 1235677889</p>
+      <p>服务时段 08:00-22:00</p>
+    </view>
+  </view>
+  <!-- 商品区域 -->
+  <view class="goods">
+    <ul>
+      <li>
+        <image src="cloud://manhua-6gzdgw9udfcf0adc.6d61-manhua-6gzdgw9udfcf0adc-1304709008/case.png"></image>
+      </li>
+      <li>
+        <image src="cloud://manhua-6gzdgw9udfcf0adc.6d61-manhua-6gzdgw9udfcf0adc-1304709008/water.png"></image>
+      </li>
+      <li>
+        <image src="cloud://manhua-6gzdgw9udfcf0adc.6d61-manhua-6gzdgw9udfcf0adc-1304709008/computer.png"></image>
+      </li>
+    </ul>
+  </view>
+</view>

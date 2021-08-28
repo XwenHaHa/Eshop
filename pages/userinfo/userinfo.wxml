@@ -1,0 +1,41 @@
+<!--pages/userinfo/userinfo.wxml-->
+<view class="vip">
+  <span>会员中心</span>
+</view>
+<image src="cloud://manhua-6gzdgw9udfcf0adc.6d61-manhua-6gzdgw9udfcf0adc-1304709008/banner.png" alt="" class="banner" />
+<view class="btnbox">
+  <van-button color="#FE4787">
+    <view class="btnnews">绑定已有会员卡</view>
+    <view class="circle" style="background-color: #e5007f">
+      <van-icon name="arrow-up" size="5px" />
+    </view>
+  </van-button>
+  <van-button color="#FABB00">
+    <view class="btnnews">开通新会员卡</view>
+    <view class="circle" style="background-color: #FABB00">
+      <van-icon name="arrow-up" size="5px" />
+    </view>
+  </van-button>
+</view>
+<view>
+  <view class="list-wrapper">
+    <view class="alllists">
+      <block wx:for="{{menuitems}}" wx:key="menu_for">
+        <navigator url="{{item.url}}" class="lists">
+          <view class='content'>
+            <view class="listimg">
+              <image src="{{item.icon}}"></image>
+            </view>
+            <view class="listtext">{{item.text}}</view>
+            <view class="listicon">{{item.tips}}</view>
+            <view class="arrows">
+              <image src="{{item.arrows}}"></image>
+            </view>
+          </view>
+        </navigator>
+        <!-- 分割线 -->
+        <view class="divLine"></view>
+      </block>
+    </view>
+  </view>
+</view>

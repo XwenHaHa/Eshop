@@ -1,0 +1,5 @@
+<!--pages/cart/cart.wxml-->
+<van-card num="10" price="2.00" title="农夫山泉" thumb="{{ imageURL1 }}" />
+<van-card num="2" price="5.00" title="奥利奥" thumb="{{ imageURL2 }}" />
+<van-card num="2" price="15000" title="雷蛇灵刃15精英水银版" thumb="{{ imageURL3 }}" />
+<van-submit-bar price="{{ 3003000 }}" button-text="提交订单" bind:submit="onSubmit" />
